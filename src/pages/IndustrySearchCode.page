@@ -96,22 +96,18 @@
 
           <!-- Navigation buttons -->
           <apex:panelGroup >
-            <apex:commandButton action="{!back}" value="Back" id="backButton" title="Back to main page"/>&nbsp;
+            <apex:commandButton action="{!back}" value="Back" id="backButton" title="Back to main page"/>&nbsp;&nbsp;
             <apex:commandButton action="{!clear}" value="Clear" id="clearButton" title="Clear fields"/>
           </apex:panelGroup>
         </apex:pageBlock>
       </apex:form>
-      <br />
-      <br />
-      <apex:image id="logo" value="{!URLFOR($Resource.wiregrass_resources, 'wiregrass.png')}"/>
-      <p>&nbsp;&copy; Wiregrass Code Technology 2014-15.&nbsp;&nbsp;Powered By: <strong>Salesforce.com</strong></p>
     </div>
   </div>
 
   <!-- Footer -->
   <div id="footer_container">
     <div id="footer">
-      &copy; Wiregrass Code Technology 2014-15. All rights reserved.
+      &copy; Wiregrass Code Technology 2014-17. All rights reserved.
     </div>
   </div>
 </apex:page>

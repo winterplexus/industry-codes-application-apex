@@ -1,7 +1,7 @@
 /**
  *  Industry codes menu controller class.
  *
- *  Copyright (c) Wiregrass Code Technology 2014-15
+ *  Copyright (c) 2014-17 Wiregrass Cloud Technology
  */
 public with sharing class IndustryCodesController {
 
@@ -16,13 +16,19 @@ public with sharing class IndustryCodesController {
         if (method.Equals('1')) {
             redirect = new PageReference('/apex/IndustrySearchCode');
         }
-        else if (method.Equals('2')) {
+        if (method.Equals('2')) {
             redirect = new PageReference('/apex/IndustrySearchSelection');
         }
-        else {
+        if (method.Equals('3')) {
             redirect = new PageReference('/apex/IndustrySearchKeyword');
         }
-        redirect.setRedirect(true);
-        return redirect;
+        if (method.Equals('4')) {
+            redirect = new PageReference('/apex/IndustryAbout');
+        }
+        if (redirect != null) {
+            redirect.setRedirect(true);
+            return redirect;
+        }
+        return null;
     }
 }

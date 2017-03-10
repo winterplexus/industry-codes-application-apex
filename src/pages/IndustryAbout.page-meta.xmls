@@ -3,6 +3,6 @@
     <apiVersion>38.0</apiVersion>
     <availableInTouch>false</availableInTouch>
     <confirmationTokenRequired>false</confirmationTokenRequired>
-    <description>IndustryCodes: search by code</description>
-    <label>IndustrySearchCode</label>
+    <description>Industry: about application</description>
+    <label>IndustryAbout</label>
 </ApexPage>
